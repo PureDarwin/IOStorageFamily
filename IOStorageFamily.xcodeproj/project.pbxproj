@@ -181,10 +181,10 @@
 		089C166AFE841209C02AAC07 /* IOStorageFamily */ = {
 			isa = PBXGroup;
 			children = (
+				247142CAFF3F8F9811CA285C /* Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
 				60DDA54607382D0300FAB8B3 /* Frameworks */,
 				19C28FB6FE9D52B211CA2CBB /* Products */,
-				089C167CFE841241C02AAC07 /* Resources */,
-				247142CAFF3F8F9811CA285C /* Sources */,
 			);
 			name = IOStorageFamily;
 			sourceTree = "<group>";
