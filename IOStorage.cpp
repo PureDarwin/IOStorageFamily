@@ -22,6 +22,7 @@
  */
 
 #define IOLOCKS_INLINE
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 
 #include <IOKit/assert.h>
 #include <IOKit/IOLib.h>
