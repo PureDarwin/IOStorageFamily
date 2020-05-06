@@ -700,208 +700,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		305CA1DB1AD49B7700E8FE14 /* DebugCoverage */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				ONLY_ACTIVE_ARCH = YES;
-			};
-			name = DebugCoverage;
-		};
-		305CA1DC1AD49B7700E8FE14 /* DebugCoverage */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_IDENTITY = "-";
-				INFOPLIST_FILE = Info.plist;
-				INFOPLIST_PREFIX_HEADER = "$(SDKROOT)/usr/include/TargetConditionals.h";
-				INFOPLIST_PREPROCESS = YES;
-				OTHER_CFLAGS = (
-					"-fprofile-instr-generate",
-					"-fcoverage-mapping",
-				);
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = IOStorageFamily;
-				WARNING_CFLAGS = "-Wall";
-				WRAPPER_EXTENSION = kext;
-			};
-			name = DebugCoverage;
-		};
-		305CA1DD1AD49B7700E8FE14 /* DebugCoverage */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_IDENTITY = "-";
-				INFOPLIST_FILE = Info.plist;
-				INFOPLIST_PREFIX_HEADER = "$(SDKROOT)/usr/include/TargetConditionals.h";
-				INFOPLIST_PREPROCESS = YES;
-				OTHER_CFLAGS = (
-					"-fprofile-instr-generate",
-					"-fcoverage-mapping",
-				);
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = IOStorageFamily;
-				WARNING_CFLAGS = "-Wall";
-				WRAPPER_EXTENSION = kext;
-			};
-			name = DebugCoverage;
-		};
-		305CA1DE1AD49B7700E8FE14 /* DebugCoverage */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				INSTALLHDRS_COPY_PHASE = YES;
-				INSTALLHDRS_SCRIPT_PHASE = YES;
-				PRODUCT_NAME = "IOStorageFamily Headers";
-			};
-			name = DebugCoverage;
-		};
-		305CA1DF1AD49B7700E8FE14 /* DebugCoverage */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				INSTALLHDRS_COPY_PHASE = YES;
-				INSTALLHDRS_SCRIPT_PHASE = YES;
-				PRODUCT_NAME = "IOStorageFamily Headers_Embedded";
-			};
-			name = DebugCoverage;
-		};
-		305CA1E01AD49B7700E8FE14 /* DebugCoverage */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				INSTALLHDRS_COPY_PHASE = YES;
-				INSTALLHDRS_SCRIPT_PHASE = YES;
-				PRODUCT_NAME = IOStorageFamily_Sim;
-			};
-			name = DebugCoverage;
-		};
-		305CA1E11AD49B7F00E8FE14 /* ReleaseCoverage */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-			};
-			name = ReleaseCoverage;
-		};
-		305CA1E21AD49B7F00E8FE14 /* ReleaseCoverage */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_IDENTITY = "-";
-				INFOPLIST_FILE = Info.plist;
-				INFOPLIST_PREFIX_HEADER = "$(SDKROOT)/usr/include/TargetConditionals.h";
-				INFOPLIST_PREPROCESS = YES;
-				OTHER_CFLAGS = (
-					"-fprofile-instr-generate",
-					"-fcoverage-mapping",
-				);
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = IOStorageFamily;
-				WARNING_CFLAGS = "-Wall";
-				WRAPPER_EXTENSION = kext;
-			};
-			name = ReleaseCoverage;
-		};
-		305CA1E31AD49B7F00E8FE14 /* ReleaseCoverage */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_IDENTITY = "-";
-				INFOPLIST_FILE = Info.plist;
-				INFOPLIST_PREFIX_HEADER = "$(SDKROOT)/usr/include/TargetConditionals.h";
-				INFOPLIST_PREPROCESS = YES;
-				OTHER_CFLAGS = (
-					"-fprofile-instr-generate",
-					"-fcoverage-mapping",
-				);
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = IOStorageFamily;
-				WARNING_CFLAGS = "-Wall";
-				WRAPPER_EXTENSION = kext;
-			};
-			name = ReleaseCoverage;
-		};
-		305CA1E41AD49B7F00E8FE14 /* ReleaseCoverage */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				INSTALLHDRS_COPY_PHASE = YES;
-				INSTALLHDRS_SCRIPT_PHASE = YES;
-				PRODUCT_NAME = "IOStorageFamily Headers";
-			};
-			name = ReleaseCoverage;
-		};
-		305CA1E51AD49B7F00E8FE14 /* ReleaseCoverage */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				INSTALLHDRS_COPY_PHASE = YES;
-				INSTALLHDRS_SCRIPT_PHASE = YES;
-				PRODUCT_NAME = "IOStorageFamily Headers_Embedded";
-			};
-			name = ReleaseCoverage;
-		};
-		305CA1E61AD49B7F00E8FE14 /* ReleaseCoverage */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				INSTALLHDRS_COPY_PHASE = YES;
-				INSTALLHDRS_SCRIPT_PHASE = YES;
-				PRODUCT_NAME = IOStorageFamily_Sim;
-			};
-			name = ReleaseCoverage;
-		};
 		3F9C5E811644E23600FC6152 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1091,9 +889,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3F9C5E811644E23600FC6152 /* Debug */,
-				305CA1E01AD49B7700E8FE14 /* DebugCoverage */,
 				3F9C5E821644E23600FC6152 /* Release */,
-				305CA1E61AD49B7F00E8FE14 /* ReleaseCoverage */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1102,9 +898,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				606B78A00D4A556B00A2EB99 /* Debug */,
-				305CA1DF1AD49B7700E8FE14 /* DebugCoverage */,
 				606B78A10D4A556B00A2EB99 /* Release */,
-				305CA1E51AD49B7F00E8FE14 /* ReleaseCoverage */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1113,9 +907,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				60CD8A3408A7E7F300DC31BD /* Debug */,
-				305CA1DC1AD49B7700E8FE14 /* DebugCoverage */,
 				60CD8A3508A7E7F300DC31BD /* Release */,
-				305CA1E21AD49B7F00E8FE14 /* ReleaseCoverage */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1124,9 +916,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				60CD8A3808A7E7F300DC31BD /* Debug */,
-				305CA1DB1AD49B7700E8FE14 /* DebugCoverage */,
 				60CD8A3908A7E7F300DC31BD /* Release */,
-				305CA1E11AD49B7F00E8FE14 /* ReleaseCoverage */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1135,9 +925,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				60FD685D0D402C4F000D088D /* Debug */,
-				305CA1DE1AD49B7700E8FE14 /* DebugCoverage */,
 				60FD685E0D402C4F000D088D /* Release */,
-				305CA1E41AD49B7F00E8FE14 /* ReleaseCoverage */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1146,9 +934,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C1E55B220D32D158002875AA /* Debug */,
-				305CA1DD1AD49B7700E8FE14 /* DebugCoverage */,
 				C1E55B230D32D158002875AA /* Release */,
-				305CA1E31AD49B7F00E8FE14 /* ReleaseCoverage */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
