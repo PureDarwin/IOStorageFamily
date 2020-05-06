@@ -409,6 +409,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_PREFIX_HEADER = "$(SDKROOT)/usr/include/TargetConditionals.h";
 				INFOPLIST_PREPROCESS = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.iokit.IOStorageFamily;
 				PRODUCT_NAME = IOStorageFamily;
 				WARNING_CFLAGS = "-Wall";
 				WRAPPER_EXTENSION = kext;
@@ -423,6 +424,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_PREFIX_HEADER = "$(SDKROOT)/usr/include/TargetConditionals.h";
 				INFOPLIST_PREPROCESS = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.iokit.IOStorageFamily;
 				PRODUCT_NAME = IOStorageFamily;
 				WARNING_CFLAGS = "-Wall";
 				WRAPPER_EXTENSION = kext;
