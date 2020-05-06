@@ -23,6 +23,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		1FB0E44224624102005CAB46 /* External.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 1FB0E43E24624102005CAB46 /* External.iconset */; };
+		1FB0E44324624102005CAB46 /* Internal.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 1FB0E43F24624102005CAB46 /* Internal.iconset */; };
+		1FB0E44424624102005CAB46 /* Removable.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 1FB0E44024624102005CAB46 /* Removable.iconset */; };
 		603C2B8A18E9D0BF00FD7A03 /* IOStorageControllerCharacteristics.h in Headers */ = {isa = PBXBuildFile; fileRef = 603C2B8918E9D0BF00FD7A03 /* IOStorageControllerCharacteristics.h */; };
 		603C2B8C18E9D11A00FD7A03 /* IOStorageControllerCharacteristics.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 603C2B8918E9D0BF00FD7A03 /* IOStorageControllerCharacteristics.h */; };
 		60AA59550D64D57400A955B0 /* IOStorageDeviceCharacteristics.h in Headers */ = {isa = PBXBuildFile; fileRef = 60AA59530D64D57400A955B0 /* IOStorageDeviceCharacteristics.h */; };
@@ -161,6 +164,9 @@
 		0560FFB0008B961F11CA2AA4 /* IOPartitionScheme.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = IOPartitionScheme.h; sourceTree = "<group>"; };
 		0560FFB1008B961F11CA2AA4 /* IOStorage.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = IOStorage.h; sourceTree = "<group>"; };
 		1F736A7B24623E5900DB1EB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1FB0E43E24624102005CAB46 /* External.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; name = External.iconset; path = IconResources/External.iconset; sourceTree = "<group>"; };
+		1FB0E43F24624102005CAB46 /* Internal.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; name = Internal.iconset; path = IconResources/Internal.iconset; sourceTree = "<group>"; };
+		1FB0E44024624102005CAB46 /* Removable.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; name = Removable.iconset; path = IconResources/Removable.iconset; sourceTree = "<group>"; };
 		6008184505C5671B00B652A2 /* IOGUIDPartitionScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOGUIDPartitionScheme.h; sourceTree = "<group>"; };
 		6008184605C5671B00B652A2 /* IOGUIDPartitionScheme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOGUIDPartitionScheme.cpp; sourceTree = "<group>"; };
 		603C2B8918E9D0BF00FD7A03 /* IOStorageControllerCharacteristics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOStorageControllerCharacteristics.h; sourceTree = "<group>"; };
@@ -192,6 +198,9 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1FB0E43E24624102005CAB46 /* External.iconset */,
+				1FB0E43F24624102005CAB46 /* Internal.iconset */,
+				1FB0E44024624102005CAB46 /* Removable.iconset */,
 				722F152A1F16D2F4005ADD98 /* kext.xcconfig */,
 				60DDA51B07382C6A00FAB8B3 /* Info.plist */,
 				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
@@ -282,7 +291,6 @@
 			buildPhases = (
 				60DDA4F907382C6A00FAB8B3 /* Headers */,
 				60DDA50607382C6A00FAB8B3 /* Resources */,
-				60284E141517B57C00FDF55B /* ShellScript */,
 				60DDA50B07382C6A00FAB8B3 /* Sources */,
 			);
 			buildRules = (
@@ -327,6 +335,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FB0E44224624102005CAB46 /* External.iconset in Resources */,
+				1FB0E44424624102005CAB46 /* Removable.iconset in Resources */,
+				1FB0E44324624102005CAB46 /* Internal.iconset in Resources */,
 				60DDA50707382C6A00FAB8B3 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,19 +345,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		60284E141517B57C00FDF55B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/iconcompiler -i \"External\" -r \"$PROJECT_DIR/IconResources\" -o \"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\" || exit 1\n/usr/local/bin/iconcompiler -i \"Internal\" -r \"$PROJECT_DIR/IconResources\" -o \"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\" || exit 1\n/usr/local/bin/iconcompiler -i \"Removable\" -r \"$PROJECT_DIR/IconResources\" -o \"$BUILT_PRODUCTS_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\" || exit 1\n";
-		};
 		60FD686A0D402C6A000D088D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
