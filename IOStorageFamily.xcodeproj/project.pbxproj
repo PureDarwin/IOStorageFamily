@@ -194,6 +194,7 @@
 			);
 			name = IOStorageFamily;
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
