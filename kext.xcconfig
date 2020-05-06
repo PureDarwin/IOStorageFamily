@@ -1,3 +1,10 @@
+#include "darwinbuild.xcconfig"
+
+SYSTEM_HEADER_SEARCH_PATHS = $(DEPROOT)/System/Library/Frameworks/Kernel.framework/PrivateHeaders $(DEPROOT)/System/Library/Frameworks/Kernel.framework/Headers
+HEADER_SEARCH_PATHS = // nothing, this is a kernel component
+FRAMEWORK_SEARCH_PATHS = // nothing, this is a kernel component
+LIBRARY_SEARCH_PATHS = // nothing, this is a kernel component
+
 BUILD_VARIANTS[sdk=macosx*] = normal kasan
 BUILD_VARIANTS[sdk=iphoneos*] = normal kasan
 CODE_SIGN_IDENTITY = -
