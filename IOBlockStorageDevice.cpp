@@ -164,26 +164,7 @@ IOBlockStorageDevice::doUnmap(IOBlockStorageDeviceExtent * extents,
                               UInt32                       extentsCount,
                               IOStorageUnmapOptions        options)
 {
-#if TARGET_OS_OSX && defined(__x86_64__)
-    if (options) {
-        return(kIOReturnUnsupported);
-    } else {
-        UInt32 i;
-
-        for (i = 0; i < extentsCount; i++) {
-            IOReturn result;
-
-            result = doDiscard(extents[i].blockStart, extents[i].blockCount);
-            if (result != kIOReturnSuccess) {
-                return(result);
-            }
-        }
-    }
-
-    return(kIOReturnSuccess);
-#else /* !TARGET_OS_OSX || !defined(__x86_64__) */
     return(kIOReturnUnsupported);
-#endif /* !TARGET_OS_OSX || !defined(__x86_64__) */
 }
 
 IOReturn
@@ -206,7 +187,7 @@ IOBlockStorageDevice::doSynchronize(UInt64                      block,
                                     IOStorageSynchronizeOptions options)
 {
     /* default the barrier synchronize to full flush */
-    return(doSynchronizeCache());
+    return(kIOReturnUnsupported);
 }
 
 IOReturn
